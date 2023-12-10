@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+}
+form {
+            background-color: #fff;
+            padding: 70px;
+            border-radius:10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+        }
+        label {
+            display: block;
+            margin: 5px  5px;
+            color: #333;
+        }
+        
+        select {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #600b0b;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #6345a0;
+        }
+        h1 {
+    color: #333;
+    text-align: center;
+    background-color: #45a049;
+  }
+</style>
+<form action="">
+    <h1>SO THICH CUA BAN</h1>
+    <div class="from-group">
+        <label for="Ho va ten"> Ho va ten</label>
+        <input type="text" id="Ho va ten" />
+    </div>
+    <BR>
+    <div class="from-group">
+         <label for="Email">Email</label> 
+          <input type="text"placeholder="nguyenvana@gmail.com" id="email" size="30"/>
+    </div>
+    <br>
+    <div class="from-group">
+   
+        <label for="">So Thich </label>
+    <b>
+        <br>
+        <input type="checkbox" name="hobby" value="The thao"  required> The thao 
+        <br>
+        <input type="checkbox" name="hobby" value="Am Nhac"   required>  Am Nhac
+        <br>
+        <input type="checkbox" name="hobby" value="Doc sach"  required> Doc sach
+        <br>
+        <input type="checkbox" name="hobby" value="Luot web"  required> Luot web 
+        <br>
+        <input type="checkbox" name="hobby" value="Choi game" required> Choi game
+        <br>
+        <input type="checkbox" name="hobby" value="Dien anh"  required> Dien anh
+        <br>
+        <input type="checkbox" name="hoboy" value="Du lich"   required> Du lich 
+        <br>
+    </b>
+</div>
+<br>
+<br>
+<div class="from-group">
+       <input type="submit" value="Gui lai thong tin"/>    
+       <input type="reset" value="Nhap lai"/>
+</Div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  form {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 444px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+
+  h2 {
+    color: #010101;
+    text-align: center;
+    background-color: aqua;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+  select,
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input[type="radio"] {
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  input[type="submit"] {
+    background-color: #4c84af;
+    color: #000000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+<body>
+  <form
+    method="get" action="simplefrom.HTML">
+  <h2>Order form</h2>
+  <p><b>What would you like to buy ? </b></p>
+  <select>
+    <option value="1$">A</option>
+    <option value="2$">B</option>
+    <option value="3$">C</option>
+  </select>
+  <p><b>How many would you like to order?</b></p>
+  <input type="radio" name="rd"/> 1 - $10 <br/>
+  <input type="radio" name="rd"/> 2 - $20 <br/>
+  <input type="radio" name="rd"/> 3 - $25 <br?>
+  <p><b>NAME <span style="color: red">*</span> </b></p>
+ <b> <input type = "text" name="firstname" placeholder="FirstName" size="15"/></b>
+ <b><input type="text" name="Lastname" placeholder="Lastname" size="=15"/> </b>
+ <b><p>EMAIL</p></b>
+ <input type="text" name="nguyenvana@gmail.com" placeholder="nguyenvana@gmail.com" size="40"/>
+<b><P>PHONE NUMBER</P></b>
+<input type="text" name="Phone 1" size="5"/> -
+<input type="text" name="phone 2" size="5"/> - 
+<input type="text" name="phone 3" size="5"/>
+<br>
+<br>
+<input type="submit" value="tim kiem"/>
+
+<style>
+  .wufoo {
+      font-family: "Lucida Grande","Lucida Sans Unicode", sans-serif;
+  }
+</style>
+  <form method="get" action="simpleform.html" class = "wufoo">
+
+</form>
+</body>
+</html>
+</html>

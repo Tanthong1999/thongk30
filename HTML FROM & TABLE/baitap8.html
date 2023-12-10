@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan ky hoc vien</title>
+</head>
+<style>
+    body {
+      font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      border-radius: 5px;
+    }
+  
+  .from-group6 {
+margin-left: 0px;
+    
+  }
+    form {
+      background-color: #fff;
+      padding: 100px;
+      margin-top: 500px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    h1 {
+      color: #010101;
+      text-align: left;
+      background-color: aqua;
+    }
+  
+    p {
+      margin: 10px 0;
+    }
+  
+    select,
+    input[type="text"],
+    input[type="email"] {
+      width: 50%;
+      padding: 3px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 3px solid #cccccc;
+      border-radius: 4px;
+    }
+  
+    input[type="radio"] {
+      margin-left: 10px;
+      text-align: center;
+    }
+  
+    .from-group7[type="submit"]{
+      background-color: #af814c;
+      color: #000000;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 10px;
+    }
+  
+    .from-group7:hover {
+      background-color: #5c45a0;
+    }
+</style>
+<form>
+            <h1>DANG KY HOC VIEN</h1> 
+    <BR>
+            <div class="from-group ">
+            <label for="Ho va ten"> Ho va ten </label>
+            <input type="text" id="Ho va ten" >     
+    </div>
+    <tr> 
+    </tr>
+            <div class="from-group2">
+
+            <label for="Gioi tinh">Gioi tinh </label>
+            <input type="radio" name="rd"> Nam
+            <input type="radio" name="rd"> Nu
+    </div>
+    <br>
+            <div class="from-group3">
+            <Label for="Dia chi">Dia chi</Label> <br>
+            <textarea rows="5" cols="45">  
+    </textarea>  
+    </div>
+    <br>
+            <div class="from-group4">
+            <label for="Lop">Lop</label>  
+   <select>
+            <option value="1" >1 </option>
+            <option value="2" >2 </option>
+            <option value="3" >3 </option>
+            <option value="4" >4  </option>
+    </select>
+    </div>
+    <br>
+    <div clas="from-group5">
+        <label for="Email">Email</label>
+        <input type="text" id="email"> 
+    </div>
+    <div class="from-group6">
+        <label for="Dien thoai"> Dien thoai </label>
+        <input type="text" id="Dien thoai"   >
+    </div>
+    <br>
+    <div class="from-group7"></div>
+        <input type="submit" value="Dang ky"/>    
+        <input type="reset" value="Nhap lai"/>
+</form>
+</body>
+</html>
