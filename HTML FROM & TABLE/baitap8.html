@@ -44,7 +44,7 @@ margin-left: 0px;
     select,
     input[type="text"],
     input[type="email"] {
-      width: 50%;
+      width: 100%;
       padding: 3px;
       margin-bottom: 10px;
       box-sizing: border-box;
@@ -57,18 +57,40 @@ margin-left: 0px;
       text-align: center;
     }
   
-    .from-group7[type="submit"]{
-      background-color: #af814c;
-      color: #000000;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 10px;
+    .from-group7{
+      padding: 15px 20px;
+      width: 200px;
+      height: 50px;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 0;
+      text-transform: uppercase;
+      margin: 25px;
+      overflow: hidden;
+      position: relative;
     }
+      
+    .from-group7::before {
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100;
+      height: 100;
+      background: linear-gradient(120deg, transparent, #00fffc, transparent);
+      transition: 0.6s;
+      position: absolute;
+
+    }
+    
   
-    .from-group7:hover {
-      background-color: #5c45a0;
+    input[type="submit"]:hover
+        {
+      background-color: transparent;
+      box-shadow: 0 0 20px 5px #00fffc;
+    }
+    input[type="reset"]:hover {
+      background-color: transparent;
+      box-shadow: 0 0 20px 5px rgb(55, 31, 103);
     }
 </style>
 <form>
@@ -82,24 +104,27 @@ margin-left: 0px;
     </tr>
             <div class="from-group2">
 
-            <label for="Gioi tinh">Gioi tinh </label>
+            <label for="Gioi tinh">Gioi tinh
             <input type="radio" name="rd"> Nam
             <input type="radio" name="rd"> Nu
+          </label>
+          </Div>
     </div>
     <br>
             <div class="from-group3">
             <Label for="Dia chi">Dia chi</Label> <br>
-            <textarea rows="5" cols="45">  
+            <textarea rows="5" cols="47">  
     </textarea>  
     </div>
     <br>
             <div class="from-group4">
-            <label for="Lop">Lop</label>  
+            <label for="Lop">Lop
    <select>
             <option value="1" >1 </option>
             <option value="2" >2 </option>
             <option value="3" >3 </option>
             <option value="4" >4  </option>
+          </label>  
     </select>
     </div>
     <br>
