@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bt5.css">
+</head>
+
+<body>
+    <form onsubmit="">
+        <div>
+            <label for="amount"><b><h1>Amount</h1></b></label>
+            <input type="number" id="amount">
+        </div>
+        <div>
+            <label for="fromCurrency"><b><h1>From Currency</h1></b></label>
+            <select id="fromCurrency">
+                <option value="vnd">VietNam</option>
+                <option value="usd">USD</option>
+            </select>
+        </div>
+        <div>
+            <label for="toCurrency"><b><h1>To Currency</h1></b></label>
+            <select id="toCurrency">
+                <option value="usd">USD</option>
+                <option value="vnd">VietNam</option>
+            </select>
+            <button onclick="convertCurrency()">Convert</button>
+            <div id="result"> </div>
+    </form>
+    <script src="./baitap5.js"></script>
+</body>
+
+</html>
