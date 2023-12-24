@@ -33,7 +33,7 @@ if (a == 1) {
 if (a == 2 || a == 3) {
 	alert('2,3');
 */
-let a = prompt ('a?','');
+/*let a = prompt ('a?','');
 switch (a) {
     case 'a':
     alert(0);
@@ -46,4 +46,15 @@ switch (a) {
         alert('2,3')
         break;
 
+}*/
+
+//////
+let value = prompt('Type a number', 0);
+if (value > 0) {
+	alert(1);
+} else if (value < 0) {
+	alert(-1);
+} else {
+	alert(0);
 }
+

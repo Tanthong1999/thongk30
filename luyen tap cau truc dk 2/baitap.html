@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Bài 1: Chuyển từ độ C sang độ F.
+        let input0c;
+input0c = prompt("nhap do C");
+let DoC = parseInt(input0c); 
+let DOF = ( DoC * 1.8 ) + 32
+document.write("The area is: " + DOF);
+
+
+// Bài 2: Chuyển từ mét sang feet.
+var met = parseInt(prompt("Nhap kich thuoc:"));
+var feet = met*3.28808;
+document.write("The area is:"+ feet);
+
+// Bài 3: Tính diện tích hình vuông khi biết cạnh a.
+var a = parseInt(prompt("NHap canh a:"));
+var Shinhvuong = a*a
+document.write("The area is:" + Shinhvuong);
+
+// Bài 4: Tính diện tích hình chữ nhật khi biết 02 cạnh a, b.
+var a = parseInt(prompt("Nhap so a:"));
+var b = parseInt(prompt("Nhap so b:"));
+var Shinhchunhat= a * b ;
+document.write("The area is :"+ Shinhchunhat);
+
+// Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.
+var a = parseInt(prompt("Nhap kich thuoc a:"));
+var b = parseInt(prompt("Nhap kich thuoc b:"));
+var Stamgiacvuong = (a*b)/2 ;
+document.write("This area is:"+Stamgiacvuong);
+
+// Bài 6: Giải phương trình bậc 1 (ax + b = 0 => x = -b/a).
+
+    var a = parseInt(prompt("Nhap a:"));
+    var b = parseInt(prompt("Nhap b:"));
+    var x = -b/a ;
+    if (a === 0) {
+        alert("Phuon trinh vo nghiem");
+    } else {
+       alert ("Phuong trinh co nghiem X =" + x);
+    }
+
+
+// Bài 7: Giải phương trình bậc 2.ax2+bx+c=0 (a≠0)
+var a = parseInt(prompt("Nhap a (a#0) :"));
+var b = parseInt(prompt("Nhap b :"));
+var c = parseInt(prompt("Nhap c :"));
+var delta = b*b-4*a*c ;
+if (delta < 0) {
+        alert("Phương trình vô nghiệm");
+    } else if (delta === 0) {
+        var x = -b / (2 * a);
+        alert("Phương trình có nghiệm kép x = " + x);
+    } else {
+        var x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        var x2 = (-b - Math.sqrt(delta)) / (2 * a);
+        alert("Phương trình có hai nghiệm phân biệt: x1 = " + x1 + ", x2 = " + x2);
+    }
+
+// Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không.
+
+// Bài 9: Kiểm tra xem 3 số thực (a, b, c) nhập vào có phải là cạnh của một tam giác.
+function kiemTraTamGiac(a, b, c) {
+    return a > 0 && b > 0 && c > 0 && (a + b > c) && (b + c > a) && (a + c > b);
+}
+
+// Bài 10: Viết chương trình tính giá điện.
+var sodien =parseInt(prompt("Nhap so dien tieu thu:"));
+    var giaDien = 3000;
+    var avgdien = soDien * giaDien;
+document.write("Gia dien tieu thu:"+ avgdien);
+
+// Bài 11: Viết chương trình tính thuế thu nhập cá nhân.
+var thuNhap = parseInt(prompt("Nhap thu nhap ca nhan:"));
+var tyLeThue =0.1;
+var thunhapcanhan = thuNhap * tyLeThue;
+document.write("Thu nhap ca nhan:"+thunhapcanhan);
+
+// Bài 12: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lãi con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.
+var soTienBanDau = parseInt(prompt("Nhap so tien ban dau:"));
+var laiXuatHangThang = parseInt(prompt("Nhap lai xuat hang thang:"));
+var sothang = parseInt(prompt("Nhap so thang:"));
+    var lai = soTienBanDau * (laiXuatHangThang / 100) * soThang;
+   var sotienphaitra =  soTienBanDau + lai;
+   alert("Tien goc phai tra :"+sotienphaitra);
+
+    </script>
+</body>
+</html>

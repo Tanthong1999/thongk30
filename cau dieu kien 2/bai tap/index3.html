@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="main3.js"></script>
+<style>
+    input{
+        height: 10px;
+        width: 100px;
+    }
+    .calculator {
+      width: 130px;
+      border: 4px solid #ccc;
+      padding: 10px;
+      margin: 30px;
+    }
+</style>
+<body>
+    <form action="">
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+            <br>
+            <button onclick="Nhapso('7')">7</button>
+            <button onclick="Nhapso('8')">8</button>
+            <button onclick="Nhapso('9')">9</button>
+            <BUTton onclick="thucHienPhepToan('/')">/</BUTton>
+            <br>
+            <button onclick="Nhapso('4')">4</button>
+            <button onclick="nhapso('5')">5</button>
+            <button onclick="Nhapso('6')">6</button>
+            <button onclick="thucHienPhepToan('*')">*</button>
+            <br>
+            <button onclick="nhapso('1')">1</button>
+            <button onclick="Nhapso('2')">2</button>
+            <button onclick="Nhapso('3')">3</button>
+            <button onclick="thucHienPhepToan('-')">-</button>
+            <br>
+            <button onclick="XoaManhinh('c')">c</button>
+            <button onclick="Nhapso('0')">0</button>
+            <button onclick="Ketqua('=')">=</button>
+            <button onclick="thucHienPhepToan('+')">+</button>
+        </div>
+    </form>
+</body>
+</html>
