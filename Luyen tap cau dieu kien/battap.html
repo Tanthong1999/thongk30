@@ -9,7 +9,7 @@
     <script>
 //Bài 1: Nhập vào hai số a và b, và kiểm tra xem a có chia hết cho b hay không
  
-/* var a = parseInt(prompt("Nhập số a:"));
+var a = parseInt(prompt("Nhập số a:"));
 var b = parseInt(prompt("Nhập số b:"));
 
 if (a % b === 0) {
@@ -64,26 +64,9 @@ if (avg >= 5 ){
 }
 else{
     alert("Xep loai hoc luc yeu");
-}*/
-// bai 6: Hoa hồng doanh thu = Mức phần trăm hoa hồng x Giá bán.Tinh hoa hong nhan duoc phu thu thuoc vao muc doanh so ban hang
-function tinhHoaHong(doanhSoBanHang) {
-    // Định nghĩa các mức hoa hồng
-    var muc1 = 0.05; // 5% cho mức doanh số dưới 1000
-    var muc2 = 0.1;  // 10% cho mức doanh số từ 1000 đến 5000
-    var muc3 = 0.15; // 15% cho mức doanh số trên 5000
-    var doanhSoBanHang =
-    // Tính hoa hồng dựa trên mức doanh số
-    if (doanhSoBanHang <= 1000) {
-        return doanhSoBanHang * muc1;
-        alert("Hoa hong doanh thu :"+ )
-    } else if (doanhSoBanHang <= 5000) {
-        return 1000 * muc1 + (doanhSoBanHang - 1000) * muc2;
-    } else {
-        return 1000 * muc1 + 4000 * muc2 + (doanhSoBanHang - 5000) * muc3;
-    }
 }
-console.log(`Doanh số bán hàng: ${doanhSo}`);
-console.log(`Hoa hồng nhận được: ${hoaHong}`);
+// bai 6: Hoa hồng doanh thu = Mức phần trăm hoa hồng x Giá bán.Tinh hoa hong nhan duoc phu thu thuoc vao muc doanh so ban hang
+
     </script>
 </body>
 </html>

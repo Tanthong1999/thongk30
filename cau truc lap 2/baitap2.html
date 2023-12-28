@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+
+        <h2>Hien thi 20 so nguyen to</h2>
+    
+        <script>
+
+            const numbers = parseInt(prompt("Nhap gia tri so luong nguyen to :"));
+            let count = 0;
+            let N = 2;
+            while (count < numbers) {
+                let lasonguyento = true;
+                for (let i = 2; i <= Math.sqrt(N); i++) {
+                    if (N % i === 0) {
+                        lasonguyento  = false;
+                        break;
+                    }
+                }
+                if (lasonguyento ) {
+                    console.log(N);
+                    count++;
+                }
+                N++;
+            }
+        </script>
+</body>
+</html>

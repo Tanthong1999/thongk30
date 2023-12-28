@@ -19,30 +19,46 @@
     }
 </style>
 <body>
-    <form action="">
-        <div class="calculator">
-            <input type="text" id="display" disabled>
+    <div class="calculator">
+        <input type="text" id="result" disabled>
+        <div class="buttons">
+            <button onclick="buttonResults('7')">7</button>
+            <button onclick="buttonResults('8')">8</button>
+            <button onclick="buttonResults('9')">9</button>
+            <button onclick="buttonResults('+')">+</button>
             <br>
-            <button onclick="Nhapso('7')">7</button>
-            <button onclick="Nhapso('8')">8</button>
-            <button onclick="Nhapso('9')">9</button>
-            <BUTton onclick="thucHienPhepToan('/')">/</BUTton>
+            <button onclick="buttonResults('4')">4</button>
+            <button onclick="buttonResults('5')">5</button>
+            <button onclick="buttonResults('6')">6</button>
+            <button onclick="buttonResults('-')">-</button>
             <br>
-            <button onclick="Nhapso('4')">4</button>
-            <button onclick="nhapso('5')">5</button>
-            <button onclick="Nhapso('6')">6</button>
-            <button onclick="thucHienPhepToan('*')">*</button>
+            <button onclick="buttonResults('1')">1</button>
+            <button onclick="buttonResults('2')">2</button>
+            <button onclick="buttonResults('3')">3</button>
+            <button onclick="buttonResults('*')">*</button>
             <br>
-            <button onclick="nhapso('1')">1</button>
-            <button onclick="Nhapso('2')">2</button>
-            <button onclick="Nhapso('3')">3</button>
-            <button onclick="thucHienPhepToan('-')">-</button>
-            <br>
-            <button onclick="XoaManhinh('c')">c</button>
-            <button onclick="Nhapso('0')">0</button>
-            <button onclick="Ketqua('=')">=</button>
-            <button onclick="thucHienPhepToan('+')">+</button>
+            <button onclick="buttonResults('0')">0</button>
+            <button onclick="buttonResults('/')">/</button>
+            <button onclick="clearResult()">C</button>
+            <button onclick="calculate()">=</button>
         </div>
+    </div>
+
+    <script>
+        let result = document.getElementById('result');
+
+        function buttonResults(value) {
+            result.value = result.value + value;
+        }
+
+        function clearResult() {
+            result.value = '';
+        }
+
+        function calculate() {
+            result.value = eval(result.value);
+        }
+    </script>
     </form>
 </body>
 </html>
